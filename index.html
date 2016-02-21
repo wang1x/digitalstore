@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+  <title>Digital Store</title>
+  <link rel="stylesheet" href="project.css">
+  	<script type="text/javascript">
+var slideimages= new Array() //array images
+slideimages[0] =new Image() //First image objects
+slideimages[0].src = "images/pic1.jpg" 
+slideimages[1] =new Image() 
+slideimages[1].src = "images/pic2.jpg" 
+slideimages[2] =new Image() 
+slideimages[2].src = "images/pic3.jpg" 
+slideimages[3] =new Image() 
+slideimages[3].src = "images/pic4.jpg" 
+slideimages[4] =new Image() 
+slideimages[4].src = "images/pic5.jpg" 
+slideimages[5] =new Image() 
+slideimages[5].src = "images/pic6.jpg" 
+slideimages[6] =new Image() 
+slideimages[6].src = "images/pic7.jpg" 
+slideimages[7] =new Image() 
+slideimages[7].src = "images/pic8.jpg" 
+slideimages[8] =new Image() 
+slideimages[8].src = "images/pic9.jpg" 
+slideimages[9] =new Image() 
+slideimages[9].src = "images/pic10.jpg" 
+</script>
+ <style>
+      #map-canvas {
+        width: 253px;
+        height: 240px;
+      }
+</style>
+ <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(49.7,  -112.833333),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+<div class="wrapper">
+   <div class="banner"> 
+    
+	<div style="float:left; width:70%;">
+	 <img id="logo" src="images/prologo.png" width="80" height="90">
+	 <h1> ABC   Digital   Store</h1>
+	</div>
+	
+	<div style="color:#8258FA;">
+    <script>
+
+    var now = new Date();
+    var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+    function fourdigits(number) {
+    return (number < 1000) ? number + 1900 : number;
+     }
+     today =  months[now.getMonth()] + " " +
+         date + ", " +
+         (fourdigits(now.getYear())) ;
+     document.write(today);
+    </script><br>
+	</div>
+	<table class="table1">
+	<tr>
+	  <td>
+	     <script>
+         (function() {
+          var cx = '002873501607986822137:ipoxs1sgjga';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+         })();
+         </script>
+        <gcse:search></gcse:search></td>
+	</tr>
+	</table>
+	
+   </div> <br>
+   <div class="main">
+     <div class="left"></div>
+        <div class="inner">
+		  <div class="navi">
+		    <form>
+		    <nav>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<a href="index.html">Home</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<a href="survey.html">Products & Services</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<a href="news.html">News & Events</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<a href="contact.html">Directory</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			</nav>
+			</form>
+		  </div>
+		  
+		    <div class="picture">
+<img src="pic1.jpg" id="slide" width="520px" height=280px/>
+
+<script type="text/javascript">
+var step=0;
+
+function slideit(){
+
+ if(!document.images)
+   return
+  document.getElementById('slide').src= slideimages[step].src
+   if(step<9)
+    step++
+  else
+    step=0;
+	setTimeout("slideit()",3000)
+	}
+	slideit()
+for (var count=1;count<=10000;count++)
+	{
+	setTimeout(function(){},1000)
+	}
+</script>
+			</div> <br>
+			<div class="words">
+			<h2>Website Info/Description.<h2>
+			<p>This website is about a digital store.From the website, you can get general information about the store. 
+			From the homepage you can know some of pictures of store's products.Also, you can hear the owner's sound and
+			know the store's address. Of course, the link from the navigations will throw you more details about the 
+			products and service policy. You also can give some comments through survey forms.You can contact the store by provided
+			e-mail address, phone number and so on.If you often visit the website, you will never miss the big activities the store will have. 
+			</div>
+			<div class="video">
+			<video width="250" height="250" controls>
+			<source src="video_audio\provideo.mp4" type="video/mp4"></div>
+			<div class="map" id="map-canvas">
+			</div>
+			</div>
+     <div class="right"></div>
+	</div>
+      <div class="bottom">
+	    <div class="bottoml">
+        <p>Product or service related information:<br>
+		In the store, there are many digital products which you are looking for! The price are competitive while the quality are guaranteed!
+	    If you purchase a product which is over $2000, you will be automatically a membership of the store which will let you enjoy 10% of the
+		original price for any purchase after.
+		<p>
+	  </div>&nbsp&nbsp
+		<div class="bottomr">
+		<table class="table2">
+		<caption style="color:purple">Table of Events</caption>
+		<thead>
+		<tr>
+		  <th>East Holiday</th>
+		  <th>Summer</th>
+		  <th>Christmas Holiday</th>
+		 </tr>
+		 </thead>
+		 <tbody>
+		 <tr>
+		  <td style="background-color:pink">10% off</td>
+		  <td rowspan="3" bgcolor="white">X</td>
+		  <td>X</td>
+		 </tr>
+		 <tr>
+		  <td style="background-color:pink">lucky drawer</td>
+		  <td>X</td>
+		 </tr>
+		 <tr>
+		  <td rowspan="2" bgcolor="white">X</td>
+		 
+		  <td>X</td>
+		 </tr>
+		 <tr>
+		  <td style="background-color:pink">limit free back-pack</td>
+		  <td>X</td>
+		 </tr>
+		 </tbody>
+		</table>
+		</div>
+	  </div>
+	 <div class="footer"> 
+	    <div style="float:left;"><img style="padding-left:5px" src="images/facebook.jpg" width="40" height="40" alt="facebook">&nbsp&nbsp&nbsp&nbsp
+	    <img src="images/twitter.png" width="40" height="40" alt="twitter">
+		</div>
+	    <p id="fp">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAddress:785 Heritage BLLA SW Lethbridge Alberta T1k 7k1
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbspEmail:ABC@ditital.com &nbsp&nbsp&nbsp&nbspCopyright&copy2014|Privacy Policy|Legal Issue</p>
+	 </div>
+	</div>
+</body>
+</html>

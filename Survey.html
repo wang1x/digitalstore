@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <title> Survey </title>
+ <meta charset="utf-8">
+ <style type="text/css">
+  body{background-image:url(images/surveybkpic.png);}
+  nav a{text-decoration:none;
+             font-size:2.0em;
+		top-margin:20px;}
+  nav a:link{color:#006600;}
+nav a:visited{color:#003300;}
+ nav a:hover{color:#cc66cc;}
+ nav a:active{color:#000000;}
+ table{
+    width:1000px;
+	margin:auto;
+	hight:1200px;
+	background-color:#A8C682;
+	border:5px solid black;
+	cellpadding:"5";
+	margin-top:50px;
+    }
+textarea{
+   name:TextArea1;
+   background-color:white;
+   color:#CBC1E9;
+   cols="30";
+   rows="10";
+   font-weight:bold;
+   font-style:italic;
+   font-size:1.5em;
+   }
+   th {font-szie:2.0em;
+       font-weight:bold;
+	   color:black;}
+   td front{color:black;
+            font-size:1.2em; 
+			font-family:Arial, sans-serif
+			}
+ </style>
+ </head>
+ <body>
+ <div>
+ <nav>
+			<span style="padding-left:490px"><a href="index.html">Home</a></span>
+			<span style="padding-left:40px"><a href="survey.html">Products & Services</a></span>
+			
+			<span style="padding-left:40px"><a href="news.html">News & Events</a></span>
+			<span style="padding-left:40px"><a href="contact.html">Directory</a></span>
+			</nav>
+</div>
+ <audio autoplay="autoplay" loop="loop" hidden="true">
+<source src="video_audio/surveybksound.mp3" type="audio/mpeg">
+</audio>
+
+  <form name="survey" method="post" id="survey" action="mailto:xia.wang@lethbridgecollege.ab.ca">
+  
+  <table border="1">
+    <tr>
+	    <th colspan="8" align="center">Digital Product Purchase Survey
+		</th>
+	</tr>
+	<tr>
+	    <td colspan="8" align="left">
+	       <font>1. will you do research before you buy any digital product?</font><br>
+           <input name="Radio1" type="radio">&nbsp Yes
+		   <input name="Radio1" type="radio">&nbsp  No
+		
+	    </td>
+	</tr>
+	<tr>
+	    <td colspan="8" align="left">
+	       <font>2.where will you get information about a digital product which you want to buy?</font><br>
+		   <input name="checkbox1" type="checkbox">&nbsp; Website<br>
+		   <input name="checkbox1" type="checkbox">&nbsp; Magzine<br>
+		   <input name="checkbox1" type="checkbox">&nbsp; Word of mouth<br>
+		   <input name="checkbox1" type="checkbox">&nbsp; Go to real stores<br>
+		   
+	    </td>
+	</tr>
+	
+	<tr>
+	    <td colspan="8" align="left">
+	       <font>3.How many digital products do you have?</font><br>
+		   <input name="Radio2" type="radio">&nbsp; 1<br>
+		   <input name="Radio2" type="radio">&nbsp; 2<br>
+		   <input name="Radio2" type="radio">&nbsp; 3<br>
+		   <input name="Radio2" type="radio">&nbsp; 4<br>
+		   <input name="Radio2" type="radio">&nbsp; more<br>
+	    </td>
+	</tr>
+	  
+	<tr>
+	    <td colspan="8" align="left">
+	       <font>4.Which brand is your most expensive digital product?</font><br>
+		   <input type="text">
+		  
+		
+	    </td>
+	</tr>
+	
+	<tr>
+	    <td colspan="8" align="left">
+	       <font>5.what do you care most when you buy a digital product?</font><br>
+		    <select size="1" name="favcha" id="favcha">
+		      <option>select the character you care most</option>
+			  <option>Quality</option>
+			  <option>Price</option>
+			  <option>Brand</option>
+			  <option>Looks</option>
+			</select>
+	    </td>
+	</tr>
+	
+	<tr>
+	    <td colspan="8" align="left">
+	       <font>7.what is your favorite digital product. </font><br>
+		   <select size="3" name="jumpmenu" id="jumpmenu">
+		   <option value="TV">TV</option>
+		   <option value="Computer">Compouter</option>
+		   <option value="Cell Phone">Cell Phone</option>
+		   <option value="Tablet">Tablet</option>
+		   <option value="Others">Others</option>
+		   </select>
+		 </td>
+	</tr>
+	
+	<tr>
+	    <td colspan="8" align="left">
+	       <font>8.What do you think of the customer service for the digital industry? </font><br>
+		   Comments:<br>
+		  <textarea name="comments" id="comments" cols="40" rows="2">Enter your comments here</textarea>
+	    </td>
+	</tr>
+
+	<tr>
+	    <td align="left" colspan="2">Please submit this form </td>
+
+        <td colspan="5">
+	    Your Name Please
+		<input type="text" name="name" id="name">
+		<input type="submit" name="submit" id="sumbit" value="send" width="3px" bgcolor="grey"><br>
+		To clear this form,please click here&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input type="reset" name="reset" id="reset" value="clear" width="5px" bgcolor="grey">
+	   </td>
+	</tr>
+  </table>  
+   
+  </form>
+ 
+ </body>
+ </html>
